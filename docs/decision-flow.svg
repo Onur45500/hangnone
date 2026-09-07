@@ -1,45 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="220" viewBox="0 0 880 220" role="img" aria-label="hangnone decision flow">
-  <defs>
-    <style>
-      .label { fill: #1a1d23; font: 600 12px ui-sans-serif, system-ui, sans-serif; }
-      .sub { fill: #4b5563; font: 500 10px ui-sans-serif, system-ui, sans-serif; }
-      .box { stroke-width: 1.5; }
-      .arrow { stroke: #6b7280; stroke-width: 1.5; fill: none; marker-end: url(#arrow); }
-    </style>
-    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#6b7280"/>
-    </marker>
-  </defs>
   <rect width="880" height="220" fill="#f8fafc" rx="12"/>
 
-  <rect class="box" x="20" y="70" width="140" height="56" rx="8" fill="#fef3c7" stroke="#d97706"/>
-  <text class="label" x="90" y="94" text-anchor="middle">1. BYPASS</text>
-  <text class="sub" x="90" y="112" text-anchor="middle">skip-permissions</text>
+  <rect x="20" y="70" width="140" height="56" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="90" y="94" text-anchor="middle" fill="#1a1d23" font-size="12" font-weight="600" font-family="Arial, Helvetica, sans-serif">1. BYPASS</text>
+  <text x="90" y="112" text-anchor="middle" fill="#4b5563" font-size="10" font-family="Arial, Helvetica, sans-serif">skip-permissions</text>
 
-  <path class="arrow" d="M168 98 H188"/>
+  <polygon points="168,98 188,98 178,92 188,98 178,104" fill="#6b7280"/>
+  <line x1="168" y1="98" x2="188" y2="98" stroke="#6b7280" stroke-width="1.5"/>
 
-  <rect class="box" x="196" y="70" width="140" height="56" rx="8" fill="#dcfce7" stroke="#16a34a"/>
-  <text class="label" x="266" y="94" text-anchor="middle">2. DENY-CONT.</text>
-  <text class="sub" x="266" y="112" text-anchor="middle">prompts none</text>
+  <rect x="196" y="70" width="140" height="56" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="266" y="94" text-anchor="middle" fill="#1a1d23" font-size="12" font-weight="600" font-family="Arial, Helvetica, sans-serif">2. DENY-CONT.</text>
+  <text x="266" y="112" text-anchor="middle" fill="#4b5563" font-size="10" font-family="Arial, Helvetica, sans-serif">prompts none</text>
 
-  <path class="arrow" d="M344 98 H364"/>
+  <line x1="344" y1="98" x2="364" y2="98" stroke="#6b7280" stroke-width="1.5"/>
+  <polygon points="364,98 354,92 354,104" fill="#6b7280"/>
 
-  <rect class="box" x="372" y="70" width="140" height="56" rx="8" fill="#dcfce7" stroke="#16a34a"/>
-  <text class="label" x="442" y="94" text-anchor="middle">3. DENY-CONT.</text>
-  <text class="sub" x="442" y="112" text-anchor="middle">dontAsk settings</text>
+  <rect x="372" y="70" width="140" height="56" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="442" y="94" text-anchor="middle" fill="#1a1d23" font-size="12" font-weight="600" font-family="Arial, Helvetica, sans-serif">3. DENY-CONT.</text>
+  <text x="442" y="112" text-anchor="middle" fill="#4b5563" font-size="10" font-family="Arial, Helvetica, sans-serif">dontAsk settings</text>
 
-  <path class="arrow" d="M520 98 H540"/>
+  <line x1="520" y1="98" x2="540" y2="98" stroke="#6b7280" stroke-width="1.5"/>
+  <polygon points="540,98 530,92 530,104" fill="#6b7280"/>
 
-  <rect class="box" x="548" y="70" width="140" height="56" rx="8" fill="#e5e7eb" stroke="#6b7280"/>
-  <text class="label" x="618" y="94" text-anchor="middle">4. UNKNOWN</text>
-  <text class="sub" x="618" y="112" text-anchor="middle">missing or dynamic vars</text>
+  <rect x="548" y="70" width="140" height="56" rx="8" fill="#e5e7eb" stroke="#6b7280" stroke-width="1.5"/>
+  <text x="618" y="94" text-anchor="middle" fill="#1a1d23" font-size="12" font-weight="600" font-family="Arial, Helvetica, sans-serif">4. UNKNOWN</text>
+  <text x="618" y="112" text-anchor="middle" fill="#4b5563" font-size="10" font-family="Arial, Helvetica, sans-serif">missing or dynamic</text>
 
-  <path class="arrow" d="M696 98 H716"/>
+  <line x1="696" y1="98" x2="716" y2="98" stroke="#6b7280" stroke-width="1.5"/>
+  <polygon points="716,98 706,92 706,104" fill="#6b7280"/>
 
-  <rect class="box" x="724" y="70" width="136" height="56" rx="8" fill="#fee2e2" stroke="#dc2626"/>
-  <text class="label" x="792" y="94" text-anchor="middle">5. HANG</text>
-  <text class="sub" x="792" y="112" text-anchor="middle">otherwise</text>
+  <rect x="724" y="70" width="136" height="56" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="792" y="94" text-anchor="middle" fill="#1a1d23" font-size="12" font-weight="600" font-family="Arial, Helvetica, sans-serif">5. HANG</text>
+  <text x="792" y="112" text-anchor="middle" fill="#4b5563" font-size="10" font-family="Arial, Helvetica, sans-serif">otherwise</text>
 
-  <text class="sub" x="440" y="180" text-anchor="middle">First match wins - flags override settings - Claude Code 2.1.259+</text>
+  <text x="440" y="180" text-anchor="middle" fill="#4b5563" font-size="10" font-family="Arial, Helvetica, sans-serif">First match wins - flags override settings - Claude Code 2.1.259+</text>
 </svg>

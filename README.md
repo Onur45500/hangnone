@@ -1,7 +1,7 @@
 # hangnone
 
 <p align="center">
-  <img src="docs/hangnone-logo.svg" alt="hangnone logo" width="96" height="96" />
+  <img src="docs/hangnone-logo.png" alt="hangnone logo" width="96" height="96" />
 </p>
 
 [![CI](https://github.com/Onur45500/hangnone/actions/workflows/ci.yml/badge.svg)](https://github.com/Onur45500/hangnone/actions/workflows/ci.yml)
@@ -16,7 +16,7 @@ In headless CI there is no human to approve sensitive tool calls. Without the ri
 > **Not an official Anthropic tool.** hangnone is an independent static analyzer targeting Claude Code CLI behavior as of **v2.1.259+**.
 
 <p align="center">
-  <img src="docs/demo.svg" alt="hangnone scan demo showing HANG and DENY-CONTINUE findings" width="720" />
+  <img src="docs/hangnone-demo.png" alt="hangnone scan demo showing HANG and DENY-CONTINUE findings" width="720" />
 </p>
 
 ## Install
@@ -83,7 +83,7 @@ hangnone's job is to surface the first three risks before they hit your pipeline
 Precedence is top-down (first match wins). Flags override settings files, matching Claude Code's own precedence.
 
 <p align="center">
-  <img src="docs/decision-flow.svg" alt="hangnone ordered decision flow" width="720" />
+  <img src="docs/decision-flow.png" alt="hangnone ordered decision flow" width="720" />
 </p>
 
 | Priority | Condition | Classification |

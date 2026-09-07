@@ -4,12 +4,13 @@ Images used by the README and GitHub social preview.
 
 | File | Use |
 | --- | --- |
-| `hangnone-logo.svg` | README logo — permission prompt with hang cut (preferred) |
-| `hangnone-logo.png` | Raster logo (includes wordmark variant; SVG is the mark of record) |
+| `hangnone-logo.png` | README logo (used on GitHub; SVG kept as source) |
+| `hangnone-logo.svg` | Vector logo source |
 | `hangnone-og.png` | GitHub **Settings → General → Social preview** upload |
-| `hangnone-demo.png` | Optional raster terminal mock (prefer `demo.svg`) |
-| `demo.svg` | Crisp terminal demo in README |
-| `decision-flow.svg` | Decision-table flow diagram |
+| `hangnone-demo.png` | README terminal demo (PNG — reliable on GitHub) |
+| `demo.svg` | Vector terminal demo source |
+| `decision-flow.png` | README decision diagram (PNG — reliable on GitHub) |
+| `decision-flow.svg` | Vector decision diagram source |
 
 To refresh a real terminal capture later, run:
 
