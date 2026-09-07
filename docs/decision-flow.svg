@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="220" viewBox="0 0 880 220" role="img" aria-label="hangnone decision flow">
   <defs>
     <style>
@@ -32,7 +33,7 @@
 
   <rect class="box" x="548" y="70" width="140" height="56" rx="8" fill="#e5e7eb" stroke="#6b7280"/>
   <text class="label" x="618" y="94" text-anchor="middle">4. UNKNOWN</text>
-  <text class="sub" x="618" y="112" text-anchor="middle">missing / $VAR</text>
+  <text class="sub" x="618" y="112" text-anchor="middle">missing or dynamic vars</text>
 
   <path class="arrow" d="M696 98 H716"/>
 
@@ -40,5 +41,5 @@
   <text class="label" x="792" y="94" text-anchor="middle">5. HANG</text>
   <text class="sub" x="792" y="112" text-anchor="middle">otherwise</text>
 
-  <text class="sub" x="440" y="180" text-anchor="middle">First match wins · flags override settings · Claude Code e 2.1.259</text>
+  <text class="sub" x="440" y="180" text-anchor="middle">First match wins - flags override settings - Claude Code 2.1.259+</text>
 </svg>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-label="hangnone scan demo">
   <defs>
     <style>
@@ -35,7 +36,7 @@
 
   <text class="row" x="64" y="176">mixed.yml:13   claude-code-action --max-turns 5</text>
   <text class="hang" x="560" y="176">HANG</text>
-  <text class="muted" x="640" y="176">silently auto-deny&</text>
+  <text class="muted" x="640" y="176">silently auto-deny...</text>
 
   <text class="row" x="64" y="208">mixed.yml:19   --permission-prompts none</text>
   <text class="deny" x="560" y="208">DENY-CONTINUE</text>
