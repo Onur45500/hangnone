@@ -4,7 +4,7 @@
   "description": "Find Claude Code CI jobs that will hang waiting for a permission prompt nobody can answer.",
   "type": "module",
   "bin": {
-    "hangnone": "./dist/cli.js"
+    "hangnone": "dist/cli.js"
   },
   "main": "./dist/cli.js",
   "files": [

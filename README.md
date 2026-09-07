@@ -21,10 +21,15 @@ In headless CI there is no human to approve sensitive tool calls. Without the ri
 
 ## Install
 
+Published on npm as [`hangnone`](https://www.npmjs.com/package/hangnone) (`v2.0.0+`).
+
 ```bash
-npm install -g hangnone
-# or one-shot in CI:
+# one-shot (recommended in CI)
 npx hangnone scan --fail-on hang
+
+# or install the CLI globally
+npm install -g hangnone
+hangnone scan
 ```
 
 Requires Node.js 18+.
@@ -135,7 +140,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - run: npx hangnone scan --fail-on hang
+      - run: npx hangnone@2 scan --fail-on hang
 ```
 
 ## JSON output
