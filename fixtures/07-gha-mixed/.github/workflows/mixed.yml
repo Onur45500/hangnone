@@ -1,0 +1,19 @@
+name: mixed
+on: workflow_dispatch
+jobs:
+  claude:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: hang risk
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: "Do the risky thing"
+          claude_args: "--max-turns 5"
+      - name: safe deny
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: "Do the safe thing"
+          claude_args: "--permission-prompts none --max-turns 5"

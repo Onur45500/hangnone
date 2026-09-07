@@ -1,0 +1,15 @@
+version: 2.1
+jobs:
+  agent:
+    docker:
+      - image: cimg/base:2024.01
+    steps:
+      - checkout
+      - run: claude -p "Circle hang risk"
+  safe:
+    docker:
+      - image: cimg/base:2024.01
+    steps:
+      - checkout
+      - run:
+          command: claude -p "safe" --permission-prompts none

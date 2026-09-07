@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="220" viewBox="0 0 880 220" role="img" aria-label="hangnone decision flow">
+  <defs>
+    <style>
+      .label { fill: #1a1d23; font: 600 12px ui-sans-serif, system-ui, sans-serif; }
+      .sub { fill: #4b5563; font: 500 10px ui-sans-serif, system-ui, sans-serif; }
+      .box { stroke-width: 1.5; }
+      .arrow { stroke: #6b7280; stroke-width: 1.5; fill: none; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <rect width="880" height="220" fill="#f8fafc" rx="12"/>
+
+  <rect class="box" x="20" y="70" width="140" height="56" rx="8" fill="#fef3c7" stroke="#d97706"/>
+  <text class="label" x="90" y="94" text-anchor="middle">1. BYPASS</text>
+  <text class="sub" x="90" y="112" text-anchor="middle">skip-permissions</text>
+
+  <path class="arrow" d="M168 98 H188"/>
+
+  <rect class="box" x="196" y="70" width="140" height="56" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text class="label" x="266" y="94" text-anchor="middle">2. DENY-CONT.</text>
+  <text class="sub" x="266" y="112" text-anchor="middle">prompts none</text>
+
+  <path class="arrow" d="M344 98 H364"/>
+
+  <rect class="box" x="372" y="70" width="140" height="56" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text class="label" x="442" y="94" text-anchor="middle">3. DENY-CONT.</text>
+  <text class="sub" x="442" y="112" text-anchor="middle">dontAsk settings</text>
+
+  <path class="arrow" d="M520 98 H540"/>
+
+  <rect class="box" x="548" y="70" width="140" height="56" rx="8" fill="#e5e7eb" stroke="#6b7280"/>
+  <text class="label" x="618" y="94" text-anchor="middle">4. UNKNOWN</text>
+  <text class="sub" x="618" y="112" text-anchor="middle">missing / $VAR</text>
+
+  <path class="arrow" d="M696 98 H716"/>
+
+  <rect class="box" x="724" y="70" width="136" height="56" rx="8" fill="#fee2e2" stroke="#dc2626"/>
+  <text class="label" x="792" y="94" text-anchor="middle">5. HANG</text>
+  <text class="sub" x="792" y="112" text-anchor="middle">otherwise</text>
+
+  <text class="sub" x="440" y="180" text-anchor="middle">First match wins · flags override settings · Claude Code e 2.1.259</text>
+</svg>

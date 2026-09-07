@@ -1,0 +1,15 @@
+trigger:
+  - main
+
+pool:
+  vmImage: ubuntu-latest
+
+jobs:
+  - job: ClaudeAgent
+    steps:
+      - script: claude -p "Azure hang risk"
+        displayName: Run Claude
+  - job: ClaudeSafe
+    steps:
+      - bash: claude -p "safe" --permission-prompts none
+        displayName: Run Claude safe

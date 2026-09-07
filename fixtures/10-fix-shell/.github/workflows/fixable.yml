@@ -1,0 +1,8 @@
+name: fixable
+on: workflow_dispatch
+jobs:
+  agent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: claude -p "Summarize the repo"

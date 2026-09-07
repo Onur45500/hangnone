@@ -1,0 +1,56 @@
+{
+  "name": "hangnone",
+  "version": "2.0.0",
+  "description": "Find Claude Code CI jobs that will hang waiting for a permission prompt nobody can answer.",
+  "type": "module",
+  "bin": {
+    "hangnone": "./dist/cli.js"
+  },
+  "main": "./dist/cli.js",
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "ci",
+    "permissions",
+    "hang",
+    "scanner"
+  ],
+  "author": "Onur45500",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Onur45500/hangnone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Onur45500/hangnone/issues"
+  },
+  "homepage": "https://github.com/Onur45500/hangnone#readme",
+  "dependencies": {
+    "commander": "^13.1.0",
+    "picocolors": "^1.1.1",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
+  }
+}

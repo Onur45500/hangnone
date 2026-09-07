@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-label="hangnone scan demo">
+  <defs>
+    <style>
+      .bg { fill: #0f1218; }
+      .frame { fill: #161a22; stroke: #2a3140; stroke-width: 1; }
+      .titlebar { fill: #1c212b; }
+      .dot-r { fill: #ff5f56; }
+      .dot-y { fill: #ffbd2e; }
+      .dot-g { fill: #27c93f; }
+      .prompt { fill: #5eead4; font: 500 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .cmd { fill: #e8edf5; font: 500 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .muted { fill: #8b95a8; font: 500 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .file { fill: #e8edf5; font: 600 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .row { fill: #c5cddb; font: 500 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .hang { fill: #f87171; font: 700 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .deny { fill: #4ade80; font: 700 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .sum { fill: #a8b3c7; font: 500 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .sum-hang { fill: #f87171; font: 700 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .sum-deny { fill: #4ade80; font: 700 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="420" rx="16"/>
+  <rect class="frame" x="24" y="24" width="912" height="372" rx="12"/>
+  <rect class="titlebar" x="24" y="24" width="912" height="36" rx="12"/>
+  <rect class="titlebar" x="24" y="42" width="912" height="18"/>
+  <circle class="dot-r" cx="48" cy="42" r="6"/>
+  <circle class="dot-y" cx="68" cy="42" r="6"/>
+  <circle class="dot-g" cx="88" cy="42" r="6"/>
+  <text class="muted" x="480" y="47" text-anchor="middle">hangnone</text>
+
+  <text class="prompt" x="48" y="96">$</text>
+  <text class="cmd" x="64" y="96">hangnone scan .</text>
+
+  <text class="file" x="48" y="140">.github/workflows/mixed.yml</text>
+
+  <text class="row" x="64" y="176">mixed.yml:13   claude-code-action --max-turns 5</text>
+  <text class="hang" x="560" y="176">HANG</text>
+  <text class="muted" x="640" y="176">silently auto-deny&</text>
+
+  <text class="row" x="64" y="208">mixed.yml:19   --permission-prompts none</text>
+  <text class="deny" x="560" y="208">DENY-CONTINUE</text>
+  <text class="muted" x="700" y="208">clean deny, no hang</text>
+
+  <text class="sum" x="48" y="268">Summary:</text>
+  <text class="sum-hang" x="140" y="268">1 HANG</text>
+  <text class="sum" x="220" y="268">,</text>
+  <text class="sum" x="240" y="268">0 BYPASS,</text>
+  <text class="sum-deny" x="340" y="268">1 DENY-CONTINUE</text>
+  <text class="sum" x="500" y="268">, 0 UNKNOWN</text>
+
+  <text class="muted" x="48" y="330">Catch hangs before CI burns minutes on a prompt nobody can answer.</text>
+</svg>

@@ -1,0 +1,11 @@
+name: bypass-sandbox
+on: workflow_dispatch
+jobs:
+  agent:
+    runs-on: ubuntu-latest
+    container:
+      image: sandbox:latest
+      options: --network=none
+    steps:
+      - uses: actions/checkout@v4
+      - run: bwrap --ro-bind / / -- claude -p "yolo" --dangerously-skip-permissions

@@ -1,0 +1,13 @@
+pipeline {
+  agent any
+  stages {
+    stage('Agent') {
+      steps {
+        sh '''
+          claude -p "Jenkins hang risk"
+        '''
+        sh 'claude -p "safe" --permission-prompts none'
+      }
+    }
+  }
+}

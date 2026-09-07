@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="hangnone">
+  <!-- Unanswered CI permission prompt — cut clean instead of hanging forever. -->
+  <rect width="256" height="256" rx="56" fill="#12161e"/>
+
+  <!-- dialog -->
+  <rect x="44" y="52" width="168" height="152" rx="28" fill="#1c2432"/>
+
+  <!-- muted title stub -->
+  <rect x="68" y="78" width="64" height="12" rx="6" fill="#384557"/>
+
+  <!-- prompt chevron -->
+  <path
+    d="M70 126 L98 150 L70 174"
+    fill="none"
+    stroke="#2dd4bf"
+    stroke-width="16"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- waiting cursor -->
+  <rect x="118" y="140" width="58" height="18" rx="9" fill="#edf2f7"/>
+
+  <!-- hang cut -->
+  <path
+    d="M152 112 L186 186"
+    fill="none"
+    stroke="#ff5c5c"
+    stroke-width="14"
+    stroke-linecap="round"
+  />
+</svg>

@@ -1,0 +1,18 @@
+name: ignored
+on: workflow_dispatch
+jobs:
+  claude:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # hangnone:ignore
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: "Ignored on purpose"
+          claude_args: "--max-turns 3"
+      - name: hangnone:ignore-next-line
+        run: echo skip
+      # hangnone:ignore-next-line
+      - run: claude -p "also ignored"
+      - run: claude -p "not ignored"

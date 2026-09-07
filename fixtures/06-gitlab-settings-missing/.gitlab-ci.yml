@@ -1,0 +1,7 @@
+stages:
+  - agent
+
+claude_job:
+  stage: agent
+  script:
+    - claude -p "Run the nightly audit" --settings ./missing-settings.json
