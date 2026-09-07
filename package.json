@@ -42,7 +42,7 @@
   },
   "homepage": "https://github.com/Onur45500/hangnone#readme",
   "dependencies": {
-    "commander": "^13.1.0",
+    "commander": "^15.0.0",
     "picocolors": "^1.1.1",
     "yaml": "^2.7.0"
   },
